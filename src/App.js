@@ -7,7 +7,7 @@ import { database } from './database';
 
 
 
-class App extends Component =()=>{
+class App extends Component {
  constructor(){
   super()
 this.state = {
@@ -15,16 +15,25 @@ this.state = {
  searching: ''
 } 
   }
-theSearchResult(event)=>{
- console.log(event)
+
+
+inSearch=(event)=>{
+    this.setState({searching: event.target.value})
+    
+    
 
 }
  render () {
+    const dataFiltro = this.state.database.filter(database=>{
+        return( database.name.toLowerCase().includes(this.state.searching.toLowerCase())
+
+            )
+    })
 return(
  <div className= 'tc'>
-       <h1> Robo buddies</h1>
-       <Searchbox searchResult={this.theSearchChange} />
-<CardLoop database ={this.state.database}/>   
+       <h1> Robo buddies</h1> 
+       <Searchbox searchResult={this.inSearch} />
+<CardLoop database ={dataFiltro}/>   
         </div>
         )}
 }
