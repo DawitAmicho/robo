@@ -1,0 +1,16 @@
+h1 {
+
+  font-family: 'ralway',sans-serif;
+    font-weight: 900;
+    font-size: 8em;
+    background-image: url("https://media1.giphy.com/media/yoJC2rYfuDLw3wakRa/200w.webp?cid=ecf05e47nziizxx34wtmv6uxz1inhyze6n61nsn0r99hs2wa&rid=200w.webp&ct=g");
+    back-ground-size: cover;
+    background-clip:  text;
+    -webkit-background-clip:  text;
+    color:  transparent;
+    position: relative;
+    z-index: 30;
+
+
+
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CardLoop from './CardLoop';
 import Searchbox from './Searchbox';
 import { database } from './database';
-
+import './App.css'
 
 
 
@@ -31,7 +31,7 @@ inSearch=(event)=>{
     })
 return(
  <div className= 'tc'>
-       <h1> Robo buddies</h1> 
+       <h1> Robo Cards</h1> 
        <Searchbox searchResult={this.inSearch} />
 <CardLoop database ={dataFiltro}/>   
         </div>
