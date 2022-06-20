@@ -14,3 +14,32 @@ h1 {
 
 
 }
+#cardAcc
+{
+  background: rgb(255,255 ,255,0.05);
+  backdrop-filter: blur(15px);
+
+}
+#cardAcc:hover{
+  transform: scale(1.11) ;
+  background:#FF7F50;
+  box-shadow: 0 0 20px  #FF0000,
+              0 0 40px #FF0000,
+              0 0 80px  #FF0000,
+              0 0 100px #FF0000;
+}
+#box{
+    
+  border-radius: 25px 0 0 25px;
+}
+
+
+#icon {
+  border-radius:0 25px 25px 0;
+  background: #ffc107;
+
+}
+#icon:hover{
+  background:#ff5722 ;
+
+}

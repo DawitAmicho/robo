@@ -33,7 +33,8 @@ return(
  <div className= 'tc'>
        <h1> Robo Cards</h1> 
        <Searchbox searchResult={this.inSearch} />
-<CardLoop database ={dataFiltro}/>   
+<CardLoop database ={dataFiltro}/>
+
         </div>
         )}
 }
