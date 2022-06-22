@@ -1,3 +1,9 @@
+
+:root{
+  --clr-neon: hsl(317 100% 54%);
+
+}
+
 h1 {
 
   font-family: 'ralway',sans-serif;
@@ -22,11 +28,11 @@ h1 {
 }
 #cardAcc:hover{
   transform: scale(1.11) ;
-  background:#FF7F50;
-  box-shadow: 0 0 20px  #FF0000,
-              0 0 40px #FF0000,
-              0 0 80px  #FF0000,
-              0 0 100px #FF0000;
+  background: #DB7093;
+  box-shadow: 0 0 20px  var(--clr-neon),
+              0 0 40px  var(--clr-neon),
+              0 0 80px  var(--clr-neon),
+              0 0 100px var(--clr-neon);
 }
 #box{
     
@@ -42,4 +48,17 @@ h1 {
 #icon:hover{
   background:#ff5722 ;
 
+}
+.rotate {
+ animation: rotate-keyframes 1s;
+}
+
+@keyframes rotate-keyframes {
+ from {
+  transform: rotate(0deg);
+ }
+
+ to {
+  transform: rotate(180deg);
+ }
 }
